@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ec86af, #e6f0ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card design */
+.card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2);
+  text-align: center;
+  max-width: 350px;
+}
+
+/* Title */
+h1 {
+  color: #ff4d88;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Countdown */
+p {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+/* Soft hover effect */
+.card:hover {
+  transform: scale(1.03);
+  transition: 0.3s ease;
+}
+.hearts::before {
+  content: "💖 💕 💗 💞 💓";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: float 10s linear infinite;
+  opacity: 0.3;
+  font-size: 20px;
+}
+
+@keyframes float {
+  from { transform: translateY(100vh); }
+  to { transform: translateY(-10vh); }
+}
+button {
+  margin-top: 15px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #ff4d88;
+  color: white;
+  cursor: pointer;
+}
