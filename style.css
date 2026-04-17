@@ -60,3 +60,19 @@ button {
   color: white;
   cursor: pointer;
 }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ffe6f0, #e6f0ff);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh; /* change from height to min-height */
+}
+.card {
+  width: 90%;
+  max-width: 350px;
+}
